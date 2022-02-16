@@ -1,0 +1,19 @@
+<h1 class="animated fadeIn fast">Casa <small>{{ heroe.casa }}</small></h1>
+<hr>
+
+<div class="heroes-container">
+    <div class="card" style="width: 40%;margin-left:auto; margin-right: auto;">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+        <h5 class="card-title">{{ heroe.nombre }}</h5>
+        <p class="card-text">{{ heroe.bio }}</p>
+        </div>
+        <div class="card-footer">
+        <small class="text-muted">{{ heroe.aparicion }}</small>
+        </div>
+        <button (click)="verHeroes()"
+            type="button" class="btn btn-outline-primary btn-block">
+            Volver a heroes
+        </button>
+    </div>
+</div>
